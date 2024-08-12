@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">PortFolio.</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
+            <a href="#contactform">Form</a>
+            <a href="#contact">Contact</a>
+       
+        </nav>
+</header>
+    <section class="body1">
+        <div class="image">
+            <img src="asd.png">
+        </div>
+        <div class="cont">
+<h3 ><span class="highlight">Hello,It's Me</span></h3>
+<h1><span class="highlight2">Akshay Kanakari</span></h1>
+<h2>And I'm a Student</h2>
+<h2>I’m currently learning <span class="highlight3">web development</span> <br>and eager to gain experience and knowledge<br> to grow in this field,and many more...</h2>
+
+<ul class="social-media-list1">
+        <li><a href="https://www.instagram.com/akshayy._.kanakari/" target="_blank" class="icon insta"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://github.com" target="_blank" class="icon github"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+</div>
+</section>
+    <section class="body2" id="about">
+        
+        <div class="cont1">
+        <h1>About Me!</h1>
+       <h4>
+        I am an undergraduate student,<br> I’m dedicated to honing my skills and continuously improving myself <br>in the tech field. My enthusiasm for innovation drives me to embrace new challenges and advance<br> my expertise, ensuring that I stay at the forefront of industry trends.
+       </h4>
+    </div>
+    <div class="photo">
+        <img src="clipart-man-laptop-5.png">
+    </div>
+            </section>
+            
+            
+            <section class="projects" id="projects">
+                <section class="project1 card">
+                    <h2>Project 1</h2>
+                    <img src="OIP (1).jpeg">
+                    <h3>Finding weather using open API</h3>
+                    <p>"I developed a weather prediction application using the OpenWeather API, which provides real-time weather updates and forecasts to help users plan their day effectively."</p>
+                </section>
+                <section class="project2 card">
+                    <h2>Project 2</h2>
+                    <img src="makemytrip-is-hoping-international-flights-will-start-from-july-but-it-is-also-preparing-for-many-quarters-of-big-losses.webp">
+                    <h3>MakeMyTrip</h3>
+                    <p>"I completed a project for MakeMyTrip that involved providing loans to students for their trips, with a structured repayment plan that allows them to repay monthly."</p>
+                </section>
+
+            </section>
+         
+               <section class="progress-container" id="skills">
+             
+                <h1>My Skills</h1>
+                <h2 class="html">HTML</h2>
+                <div class="progress-bar" id="html-bar">
+                    
+                    <div class="filler" data-percent="90"></div>
+                    
+                </div>
+                <h2 class="html">CSS</h2>
+                <div class="progress-bar" id="css-bar">
+                    <div class="filler" data-percent="85"></div>
+                    <!-- <span class="label">CSS</span> -->
+                </div>
+                <h2 class="html">JAVA SCRIPT</h2>
+                <div class="progress-bar" id="java-bar">
+                    <div class="filler" data-percent="75"></div>
+                    <!-- <span class="label">Java</span> -->
+                </div>
+                <h2 class="html">JAVA</h2>
+                <div class="progress-bar" id="js-bar">
+                    <div class="filler" data-percent="80"></div>
+                    <!-- <span class="label">JavaScript</span> -->
+                </div>
+                <h2 class="html">REACT JS</h2>
+                <div class="progress-bar" id="react-bar">
+                    <div class="filler" data-percent="70"></div>
+                    <!-- <span class="label">React.js</span> -->
+                </div>
+            </section>
+
+
+
+            </section>
+              <section class="meetup" id="contactform">
+              
+                <form class="login-form">
+                    <h2>Contact Form</h2>
+                    
+                    <label id="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    
+                    <label id="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label id="contact">Phone Number</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+                    
+                    <label id="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+                    
+                    <button type="submit">Done</button>
+                </form>
+              </section>
+
+            
+               <section class="footer" id="contact">
+                            <section class="work">
+                                <h2>Contact Me</h2>
+                                <p>"Feel free to contact me through social media to share collaborative ideas, and let me know if you have any suggestions through this window</p>
+                            </section>
+
+                            <section class="icons">
+                                <ul class="social-media-list">
+                                    <li><a href="https://www.instagram.com" target="_blank" class="icon insta"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://github.com" target="_blank" class="icon github"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </section>
+               </section>   
+             
+
+</body>
+<script>
+    const formE1=document.querySelector('.login-form');
+    formE1.addEventListener('submit',event =>{
+        event.preventDefault();
+        
+
+        const formData=new FormData(formE1);
+        const data=Object.fromEntries(formData);
+
+
+        fetch('http://localhost:8080/portfolio/message',{
+        method:'POST',
+        headers:{
+        'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(data)
+        }).then(res=>res.json())
+        .then(data=>console.log(data))
+        .catch(error=>console.log(error));
+
+
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const progressBars = document.querySelectorAll('.progress-bar');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const filler = entry.target.querySelector('.filler');
+                filler.style.width = getComputedStyle(filler).getPropertyValue('--percent');
+                filler.style.animation = 'fillAnimation 2s ease-out forwards';
+                entry.target.style.opacity = 1; // Show the progress bar
+                observer.unobserve(entry.target); // Stop observing once filled
+            }
+        });
+    }, { threshold: 0.1 });
+
+    progressBars.forEach(bar => observer.observe(bar));
+});
+
+</script>
+</html>
