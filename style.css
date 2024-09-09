@@ -454,7 +454,7 @@ animation: slideInText 1.5s forwards;
 
   .card {
     width: 375px; /* Fixed width for each card */
-    margin: 10px;
+    margin: 105px;
     background-color: #000;
     color: #fff;
     padding: 20px;
